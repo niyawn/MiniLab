@@ -1,0 +1,10 @@
+name:dzaky allam shidiq
+My main contribution: I added the insertAfter function to our doubly linked list.
+Allowing the addition of a new string data node right after a particular existing node.
+
+What I learned about next and prev:I found out the exact steps you need to follow when adding a new node:
+you have to set the new node's next and previous pointers first so it connects to the existing list, before changing the pointers of the nearby nodes.
+
+The hardest part: The toughest part was handling the special situation when adding an item to the end of the list.
+
+What AI helped me with: The AI helped me make my C++ code shorter and created explanations for the ideas in my code.
