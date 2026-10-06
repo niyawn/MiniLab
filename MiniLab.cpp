@@ -118,4 +118,3 @@ int main() {
     clearList(head, tail);
     return 0;
 }
-minilab1.cpp
