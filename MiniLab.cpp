@@ -65,3 +65,13 @@ Node* insertAfter(Node*& tail, Node* current, const string& data) {
 
     return newNode;              
 }
+void clearList(Node*& head, Node*& tail) {
+    Node* current = head;
+    while (current != nullptr) {
+        Node* temp = current;
+        current = current->next;
+        delete temp;
+    }
+    head = nullptr;
+    tail = nullptr;
+}
