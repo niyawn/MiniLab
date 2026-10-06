@@ -75,3 +75,47 @@ void clearList(Node*& head, Node*& tail) {
     head = nullptr;
     tail = nullptr;
 }
+
+int main() {
+    Node* head = nullptr;
+    Node* tail = nullptr;
+    addNode(head, tail, "Song A: Bohemian Rhapsody");
+    addNode(head, tail, "Song B: The cure");
+    addNode(head, tail, "Song C: Stop the wedding");
+    addNode(head, tail, "Song D: Numb");
+    addNode(head, tail, "Song E: Bring me to life");
+
+    cout << "FULL LIST CREATION\n";
+    forwardTraversal(head);
+
+    cout << "TRAVERSALS\n";
+    forwardTraversal(head); 
+    backwardTraversal(tail); 
+
+    cout << "INSERT IN THE MIDDLE\n";
+    cout << "Action: Inserting 'Song X: Dropdead' between Song B and Song C.\n";
+    Node* current = head;
+    while (current != nullptr && current->data != "Song B: The cure") {
+        current = current->next;
+    }
+    insertAfter(tail, current, "Song X: Dropdead"); 
+    
+    cout << "\nAfter Insertion:\n";
+    forwardTraversal(head);
+    backwardTraversal(tail);
+
+    cout << "PREDICT BEFORE RUNNING\n";
+    cout << "Prediction: If Song C (Stop the wedding) is deleted, Song X will connect directly to Song D.\n\n"; 
+
+    cout << "DELETE A NODE\n";
+    cout << "Action: Deleting 'Song C: Stop the wedding'.\n"; 
+    deleteNode(head, tail, "Song C: Stop the wedding"); 
+    
+    cout << "\nAfter Deletion:\n";
+    forwardTraversal(head);
+    backwardTraversal(tail);
+
+    clearList(head, tail);
+    return 0;
+}
+minilab1.cpp
