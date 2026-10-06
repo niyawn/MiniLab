@@ -48,3 +48,20 @@ void backwardTraversal(Node* tail) {
         current = current->prev;
     }
     cout << endl;
+
+Node* insertAfter(Node*& tail, Node* current, const string& data) {
+    if (current == nullptr) return nullptr;
+
+    Node* newNode = createNode(data);
+    newNode->next = current->next;
+    newNode->prev = current;
+
+    if (current->next != nullptr) {
+        current->next->prev = newNode;
+    } else {
+        tail = newNode;        
+    }
+    current->next = newNode;
+
+    return newNode;              
+}
