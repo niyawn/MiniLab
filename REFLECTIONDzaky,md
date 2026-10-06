@@ -8,3 +8,6 @@ you have to set the new node's next and previous pointers first so it connects t
 The hardest part: The toughest part was handling the special situation when adding an item to the end of the list.
 
 What AI helped me with: The AI helped me make my C++ code shorter and created explanations for the ideas in my code.
+
+What I changed or fixed myself:I added certain song names like "Bohemian Rhapsody" and "The Cure" to the playlist and 
+checked the insert and delete features to ensure the middle part of the list remained properly connected. Also make the code clear.
