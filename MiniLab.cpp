@@ -93,7 +93,7 @@ int main() {
     backwardTraversal(tail); 
 
     cout << "INSERT IN THE MIDDLE\n";
-    cout << "Action: Inserting 'Song X: Dropdead' between Song B and Song C.\n";
+    // cout << "Action: Inserting 'Song X: Dropdead' between Song B and Song C.\n";
     Node* current = head;
     while (current != nullptr && current->data != "Song B: The cure") {
         current = current->next;
@@ -105,10 +105,10 @@ int main() {
     backwardTraversal(tail);
 
     cout << "PREDICT BEFORE RUNNING\n";
-    cout << "Prediction: If Song C (Stop the wedding) is deleted, Song X will connect directly to Song D.\n\n"; 
+    // cout << "Prediction: If Song C (Stop the wedding) is deleted, Song X will connect directly to Song D.\n"; 
 
     cout << "DELETE A NODE\n";
-    cout << "Action: Deleting 'Song C: Stop the wedding'.\n"; 
+    // cout << "Action: Deleting 'Song C: Stop the wedding'.\n"; 
     deleteNode(head, tail, "Song C: Stop the wedding"); 
     
     cout << "\nAfter Deletion:\n";
