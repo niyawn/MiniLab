@@ -1,1 +1,1 @@
-
+From this code, I learned that the clearList function is used to delete all nodes in a linked list one by one. It stores the current node in a temporary variable, moves to the next node, and then deletes the previous node using delete. After all nodes are removed, head and tail are set to nullptr to make sure the list is completely empty. This code also helped me understand the importance of memory management in C++ to prevent memory leaks.
